@@ -1,6 +1,10 @@
 {
-    "0" : "UC Berkeley",
-    "1" : "UC Bank",
-    "Paragraph" : "UC Berkeley"
+    "UCB":
+        { 
+            "0" : "UC_Berkeley",
+            "1" : "UC_Bank",
+            "Paragraph" : "ABCDEFG",
+            "Answer" : "0"
+    }
 }
 
