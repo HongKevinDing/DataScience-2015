@@ -48,17 +48,23 @@ def FequenciesToInformation(in_dictionary_freq):
 # No stopwords -- no meaning attached to them
 
 # Weighted: Rare words produce less of an impact than common words 
-def SimplestMetricWighted(my_dict_freq, compare_to_dict_freq):
-    metric = 0.0
+def SimplestMetricWighted(my_dict_freq, compare_to_dict_freq, english_lang_freq, test_paragraph_UCBerk_metric_contrib):
+    overlap = 0.0
     for key, value in my_dict_freq.iteritems():
-        metric += abs(compare_to_dict_freq[key] * value) * (1.0 / english_lang_info[key])
-    return metric
+        if(key in compare_to_dict_freq):
+            key_overlap_contrib = abs(compare_to_dict_freq[key] * value) * (1.0 / float(english_lang_freq[key]))
+            overlap += key_overlap_contrib
+            test_paragraph_UCBerk_metric_contrib[key] = key_overlap_contrib
+        else:
+            test_paragraph_UCBerk_metric_contrib[key] = 0
+
+    return overlap
     
 # No weighting in the one below. Sort according to lowest ones
 def SimplestMetric(my_dict_freq, compare_to_dict_freq):
     metric = 0.0
     for key, value in my_dict_freq.iteritems():
-        metric += value  * abs(log_2(compare_to_dict_freq[key] / value))
+        metric += value  * abs(math.log(compare_to_dict_freq[key] / value))
     return metric 
      
 def PlotKeysHistogram(my_englang_info):
@@ -85,10 +91,36 @@ def main():
     FequenciesToInformation(my_englang_info)
     #print my_englang_info.nr
     
+    test_website_UCBank = json.load(open('../Testing/UCBank.json'))
+    test_website_UCBerk = json.load(open('../Testing/UCBerkeley.json'))
+    test_paragraph_UCBerk = json.load(open('../Testing/UCBerkeley_new.json'))
+
+    contrib0 = {}
+    contrib1 = {}
+
+    test_website_UCBank_counts = AddCounts(test_website_UCBank)
+    test_website_UCBerk_counts = AddCounts(test_website_UCBerk)
+    test_paragraph_UCBerk_counts = AddCounts(test_paragraph_UCBerk)
     
-    
-    test_paragraph_UCBank = json.load(open('../Testing/UCBank.json'))
-    test_paragraph_UCBerk = json.load(open('../Testing/UCBank.json'))
+    MapCountToFreq(test_website_UCBank,test_website_UCBank_counts)
+    MapCountToFreq(test_website_UCBerk,test_website_UCBerk_counts)
+    MapCountToFreq(test_paragraph_UCBerk,test_paragraph_UCBerk_counts)
+
+    print SimplestMetricWighted(test_paragraph_UCBerk,test_website_UCBank, my_englang_freq, contrib0)
+    print SimplestMetricWighted(test_paragraph_UCBerk,test_website_UCBerk, my_englang_freq, contrib1)
+
+    import operator
+    sorted_0 = sorted(contrib0.items(), key=operator.itemgetter(1))
+    sorted_1 = sorted(contrib1.items(), key=operator.itemgetter(1))
+
+    #print sorted_0
+    #print sorted_1
+
+    fp_out_berkeley = open("berkeley_out.json", "w")
+    fp_out_bank     = open("bank_out.json", "w")
+
+    json.dump(sorted_0, fp_out_bank)
+    json.dump(sorted_1, fp_out_berkeley)
     
    # print test_paragraph_UCBank
     #print test_paragraph_UCBerk
