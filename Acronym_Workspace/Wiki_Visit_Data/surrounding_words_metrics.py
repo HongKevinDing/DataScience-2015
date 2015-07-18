@@ -61,8 +61,10 @@ def SimplestMetric(my_dict_freq, compare_to_dict_freq):
         metric += value  * abs(log_2(compare_to_dict_freq[key] / value))
     return metric 
      
-def PlotKeysHistogram():
+def PlotKeysHistogram(my_englang_info):
+     
     
+    return
     
 
 # Plot: def information content of words
@@ -73,16 +75,28 @@ def main():
     my_englang_count = json.load(fp_englang_json) 
     fp_englang_json.close()
     my_englang_totalcount = AddCounts(my_englang_count)
-    print my_englang_totalcount
+    #print my_englang_totalcount
+    #print len(my_englang_count.values())
     my_englang_freq = copy.deepcopy(my_englang_count)
     MapCountToFreq(my_englang_freq, my_englang_totalcount)
-    print my_englang_count["test"]
-    print my_englang_freq["test"]
+    #print my_englang_count["test"]
+    #print my_englang_freq["test"]
     my_englang_info = copy.deepcopy(my_englang_freq)
     FequenciesToInformation(my_englang_info)
-    print my_englang_info.values()
+    #print my_englang_info.nr
     
-    PlotKeysHistogram(my_englang_info);
+    
+    
+    test_paragraph_UCBank = json.load(open('../Testing/UCBank.json'))
+    test_paragraph_UCBerk = json.load(open('../Testing/UCBank.json'))
+    
+   # print test_paragraph_UCBank
+    #print test_paragraph_UCBerk
+    
+    
+    #my_englang_count - 
+    
+    #PlotKeysHistogram(my_englang_info);
     
 
     
