@@ -1,0 +1,11 @@
+Continuous Media Markup Language (CMML) is to audio or video what HTML is to text. CMML is essentially a timed text codec. It allows to structure a time-continuously sampled data file by dividing it into temporal sections (so-called clips), and provides these clips with some additional information. This information is HTML-like and is essentially a textual representation of the audio or video file. CMML enables textual searches on these otherwise binary files.
+CMML is appropriate for use with all Ogg media formats, to provide subtitles and timed metadata.
+CMML is deprecated; Xiph.Org Foundation recommends use Kate instead.
+
+
+== Example of CMML Content ==
+
+
+== External links ==
+CMML Overview
+The origin of the CMML document, along with further documentation and standards can be found at Annodex CMML Standard Version 2.1

@@ -1,0 +1,41 @@
+In statistics and management science, a tracking signal monitors any forecasts that have been made in comparison with actuals, and warns when there are unexpected departures of the outcomes from the forecasts. Forecasts can relate to sales, inventory, or anything pertaining to an organization’s future demand.
+The tracking signal is a simple indicator that forecast bias is present in the forecast model. It is most often used when the validity of the forecasting model might be in doubt.
+
+
+== Definition ==
+One form of tracking signal is the ratio of the cumulative sum of forecast errors (the deviations between the estimated forecasts and the actual values) to the mean absolute deviation. The formula for this tracking signal is:
+Tracking signal = Σ (at' −' 'ft) / MAD
+where at is the actual value of the quantity being forecast, and ft is the forecast. MAD is the mean absolute deviation. The formula for the MAD is:
+MAD = Σ|at' −' 'ft| / n
+where n is the number of periods. Plugging this in, the entire formula for tracking signal is:
+Tracking signal = Σ (at' −' 'ft) / ( Σ|at' −' 'ft| / n )
+Another proposed tracking signal was developed by Trigg (1964). In this model, et is the observed error in period t and |et| is the absolute value of the observed error. The smoothed values of the error and the absolute error are given by:
+Et = βet + (1 − β)Et−1
+Mt = β|et| + (1 − β)Mt−1
+Then the tracking signal is the ratio:
+Tt = |Et / Mt|
+If no significant bias is present in the forecast, then the smoothed error Et should be small compared to the smoothed absolute error Mt. Therefore, a large tracking signal value indicates a bias in the forecast. For example, with a β of 0.1, a value of Tt greater than .51 indicates nonrandom errors. The tracking signal also can be used directly as a variable smoothing constant.
+There have also been proposed methods for adjusting the smoothing constants used in forecasting methods based on some measure of prior performance of the forecasting model. One such approach is suggested by Trigg and Leach (1967), which requires the calculation of the tracking signal. The tracking signal is then used as the value of the smoothing constant for the next forecast. The idea is that when the tracking signal is large, it suggests that the time series has undergone a shift; a larger value of the smoothing constant should be more responsive to a sudden shift in the underlying signal.
+
+
+== See also ==
+Calculating demand forecast accuracy
+Demand forecasting
+
+
+== Notes ==
+^ APICS Dictionary 12th Edition. Available for download at http://www.apics.org/Resources/APICSDictionary.htm
+^ Nahmias (2005, page 89)
+^ Nahmias (2005, page 97)
+
+
+== References ==
+Alstrom, P., Madsen, P. (1996) "Tracking signals in inventory control systems: A simulation study", International Journal of Production Economics, 45 (1-3), 293–302, doi: 10.1016/0925-5273(95)00120-4
+Nahmias, Steven (2005) Production & Operations Analysis, Fifth Edition, McGraw-Hill. ISBN 0-07-123837-9
+Trigg, D.W. (1964) "Monitoring a forecasting system". Operational Research Quarterly, 15, 271–274.
+Trigg, D.W. and Leach, A.G. (1967). "Exponential smoothing with an adaptive response rate". Operational Research Quarterly, 18 (1), 53–59
+
+
+== External links ==
+Tracking signal in forecasting by Dr Muhammad Al-Salamah
+Tracking Signal:A Measure of Forecast Accuracy by Tyler Hedin, Brigham Young University (Powerpoint)

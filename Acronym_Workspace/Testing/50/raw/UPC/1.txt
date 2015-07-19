@@ -1,0 +1,128 @@
+The Universal Product Code (UPC) is a barcode symbology (i.e., a specific type of barcode) that is widely used in the United States, Canada, the United Kingdom, Australia, New Zealand, and in other countries for tracking trade items in stores. Its most common form, the UPC-A, consists of 12 numerical digits, which are uniquely assigned to each trade item. Along with the related EAN barcode, the UPC is the barcode mainly used for scanning of trade items at the point of sale, per GS1 specifications. UPC data structures are a component of GTINs (Global Trade Item Numbers). All of these data structures follow the global GS1 specification which is based on international standards. Some retailers (clothing, furniture) do not use the GS1 System (other bar code symbologies, other article number systems). Other retailers use the EAN/UPC bar code symbology but without using a GTIN (for products brands sold at such retailers only).
+
+
+== History ==
+Wallace Flint proposed an automated checkout system in 1932 using punched cards. Bernard Silver and Norman Joseph Woodland, a graduate student from Drexel Institute of Technology (now Drexel University), developed a bull's-eye style code and patented it (US patent 2612994, Norman J. Woodland and Bernard Silver, "Classifying Apparatus and Method", issued October 7, 1952 ). In the 1960s, railroads experimented with a multicolor barcode for tracking railcars, but they eventually abandoned it.
+A group of grocery industry trade associations formed the Uniform Grocery Product Code Council which with consultants Larry Russell and Tom Wilson of McKinsey & Company, defined the numerical format of the Uniform Product Code. Technology firms including Charegon, IBM, Litton-Zellweger, Pitney Bowes-Alpex, Plessey-Anker, RCA, Scanner Inc., Singer, and Dymo Industries/Data General proposed alternative symbol representations to the council. In the end the Symbol Selection Committee chose to slightly modify, changing the font in the human readable area, the IBM proposal designed by George J. Laurer.
+The first UPC marked item ever scanned at a retail checkout was at the Marsh supermarket in Troy, Ohio at 8:01 a.m. on June 26, 1974, and was a 10-pack (50 sticks) of Wrigley's Juicy Fruit chewing gum. The shopper was Clyde Dawson and cashier Sharon Buchanan made the first UPC scan. The NCR cash register rang up 67 cents. The entire shopping cart also had barcoded items in it, but the gum was merely the first one picked up. This item went on display at the Smithsonian Institution's National Museum of American History in Washington, D.C.
+
+
+=== IBM proposal ===
+Around late 1969, IBM at Research Triangle Park in North Carolina assigned George Laurer to determine how to make a supermarket scanner and label. In late 1970, Heard Baumeister provided equations to calculate characters per inch achievable by two IBM bar codes, Delta A and Delta B. In February, 1971, Baumeister joined Laurer. In mid 1971, William Crouse invented a new bar code called Delta C. It achieved four times the characters per inch as Delta B. Delta B compared bar widths to space width to code bits. This was extremely sensitive to ink spread where too much ink or pressure would cause both edges of a bar to spread outward and too little to cause them to shrink. To make it worse as bars spread spaces shrink and vice versa. Delta C achieved its higher performance by only using leading to leading or trailing to trailing edges which was unaffected by uniform ink spread. The code provided best performance when it had a defined character set with a fixed reference distance that spanned most or preferably all the character. In August, 1971, Crouse joined the scanner effort. After several months they had made no progress. They were aware of the RCA bull’s eye label that could be scanned with a simple straight line laser scanner, but a readable label was far too large. Although Litton Industries proposed a bull’s eye symbol cut in half to reduce the area, it was still too large and presented the same ink smear printing problems as the RCA symbol. The redundancy and checking ability were removed completely. They were also aware of the many proposals from around the world none of which was feasible.
+
+In the spring of 1972, Baumeister announced a breakthrough. He proposed a label with bars that were slightly longer than the distance across all bars that needed to be read in a single pass. This label could be scanned with a simple “X” scanner only slightly more complex than the straight line laser scanner. The next day Baumeister suggested if the label were split into two halves the bar lengths could be cut nearly in half. These two proposals reduced the area from the bull’s eye by one third and then one sixth. The image to the right shows the label proposed by Baumeister. He did not specify any specific bar code as that was well understood. Except for the bar coding and ten digits the UPC label today is his proposal. Shortly after that Baumeister transferred to another area of RTP.
+Laurer proceeded to define the details of the label and write a proposal. Joe Woodland was assigned as planner for the project and aided Laurer with writing his proposal. Woodland was the official inventor of a nonspecific printed bar code in the 1940s and had also been involved in the RCA bull’s eye scanner.
+Laurer’s first attempt with a bar code used Delta B. The resulting label size was about six inches by three inches which was too large. Crouse suggested that Laurer use his Delta C bar code and provided a copy of his patent that had a sample alphanumeric character set and rules to generate other size alphabets. This reduced the label size to about 1.5” x 0.9”. Later Laurer asked Crouse for assistance in how the scanner could detect a label. Together they defined guard bars and a definition of how to detect the label. The guard bars also provided identification for half label discrimination and training bars for the scanner threshold circuits. Laurer had a complete label definition and proceeded to write his proposal.
+Previously Crouse had an idea for a simple wand worn like a ring and bracelet. He decided to develop that wand to provide a demonstration of the label.
+On December 1, 1972, IBM presented Laurer's proposal to the Super Market Committee in Rochester, Minnesota, the location where IBM would develop the scanner. During the presentation, Crouse gave a lab demonstration where he read UPC-like labels with his ring wand. In addition to reading regular labels, he read the large two-page centerfold label in the proposal booklet. He then turned to a page showing a photo of labeled items sitting on a table. The labels were small and flawed due to the resolution of the printed photo but the wand read many of them. This demonstration showed the robustness of the pure Delta C code. The proposal was accepted.
+One month later, January 1, 1973 Crouse transferred back to Advanced Technology and Laurer remained with the full responsibility for the label.
+Dymo Industries, makers of handheld printing devices insisted that the code be character independent, so that handheld printing devices could produce the bar code in store if the items were not bar-coded by the manufacturers. Dymo's proposal was accepted by IBM and incorporated in IBM's latest proposal.
+It was decided that the two halves of the label should have a different set of numeric characters. The character set Laurer derived from the Delta C patent used seven printable increments or units where two bars and two spaces would be printed. This yielded twenty combinations of characters but there were two pairs that when read by Delta C rules yielded the same code for the pair. Since eighteen characters were not enough Laurer tried adding one unit to the character set. This yielded twenty-six Delta C characters which could provide the two sets of decimal characters but it also added fourteen percent to the width of the label and thereby the height. This would be a thirty percent increase in area or a label of 1.7”x1.03”. Laurer felt this was not acceptable. He returned to the original character set with twenty characters but four of those were two pairs with the same Delta C reading. He decided to use them all. To distinguish between the pairs he would measure one bar width in each of the pairs to distinguish them from each other. For each pair those bars would be one or two units wide. Laurer didn’t apply Baumeister’s equations to this set. He felt just one bar width measurement would not be too serious. As it turned out it would have required over fifty percent increase in width and height for an area increase of more than double. Laurer later admitted these four characters in each set were responsible for most of the scanner read errors.
+David Savir, a mathematician was given the task of proving the symbol could be printed and would meet the reliability requirements. It must be assumed he was unaware of Baumeister’s equations. He and Laurer added two more digits to the ten for error correction and detection. Then they decided to add odd/even parity to the number of units filled with bars in each side. Odd/even parity is a technique used to detect any odd number of bit errors in a bit stream. They decided to use odd on one half and even on the other. This would provide additional indication of which half ticket was being read. This meant that every bar width had to be read accurately to provide a good reading. It also meant every space would also be known. Requiring every bit width to be read precisely basically nullified the Delta C advantage except for the Delta C reference measurement. Only the strange character set and the size of the label remains as a shadow of the Delta C code. The size was still that calculated for pure Delta C.
+There are some fields of engineering that require little or no mathematical analysis since those fields have absolute components such as computer logic design. Most of IBM development was in this area. Mechanical engineering and electronic circuit design commonly require worst case designs using known tolerances. Many engineers working with bar codes had little experience with such things and used somewhat intuitive methods. This was the cause of the poor performance of the Delta B code and quite likely the failure of RCA’s bull’s eye scanner.
+Without Baumeister’s breakthrough there probably would not have been an IBM proposal. As simple as it was in hindsight, no one else had found it. It might have been many years before a workable proposal would have been offered. Without Crouse’s Delta C bar code the proposal would probably have been abandoned since the label with Delta B was too large. Without Laurer’s effort and persistence the proposal might never have been written. Whatever imperfections the label has the improvement in print quality has overcome them to provide accurate scans most of the time.
+The following table shows the workable labels, available in the early 1970s, with their sizes.
+This is assuming a bull’s eye with the same information and reliable readability.
+
+
+=== GS1 ===
+Since 1974, GS1 US—initially known as the Uniform Product Code Council and then the Uniform Code Council—has developed standards so that companies and industries can identify, capture, and share supply chain information.
+
+
+== Composition ==
+Each UPC-A barcode consists of a scannable strip of black bars and white spaces, above a sequence of 12 numerical digits. No letters, characters, or other content of any kind may appear on a standard UPC-A barcode. The digits and bars maintain a one-to-one correspondence - in other words, there is only one way to represent each 12-digit number visually, and there is only one way to represent each visual barcode numerically.
+The scannable area of every UPC-A barcode follows the pattern SLLLLLLMRRRRRRE, where the S (start), M (middle), and E (end) guard bars are represented exactly the same on every UPC and the L (left) and R (right) sections collectively represent the 12 numerical digits that make each UPC unique. The first digit L indicates a particular number system to be used by the following digits. The last digit R is an error detecting check digit that allows some errors in scanning or manual entry to be detected. The non-numerical identifiers, the guard bars, separate the two groups of six digits and establish the timing.
+Note: UPC-A 123456789999 corresponds with UPC-E 234569 (with the EOOEOE parity pattern). Equivalent UPC-A and UPC-E barcodes share the same check digit, which is 9 in this case.
+
+
+=== Formatting ===
+UPC-A barcodes can be printed at various densities to accommodate a variety of printing and scanning processes. The significant dimensional parameter is called x-dimension, the ideal width of single module element. A single x-dimension must be used uniformly within a given UPC-A barcode. The width of each bar and space is determined by multiplying the x-dimension by the module width of each bar or space (1, 2, 3, or 4 units). Visually, a grouping of two or more adjacent bars appear as a single wide bar, while a grouping of two or more adjacent spaces appear as a single wide space. Since the guard bars each include two bars, and each of the 12 digits of the UPC-A barcode consists of two (wide) bars and two (wide) spaces, all UPC-A barcodes consist of exactly (3 × 2) + (12 × 2) = 30 (wide) bars, of which 24 represent numerical digits and 6 represent guard bars.
+The x-dimension for the UPC-A at the nominal size is 0.33 mm (0.013 in.). Nominal symbol height for UPC-A is 25.9 mm (1.02 in.). In UPC-A the dark bars forming the Start, Middle, and End guard bars are extended downwards by 5 times x-dimension, with a resulting nominal symbol of height of 27.55 mm (1.08 in.) This also applies to the bars of the first and the last symbol characters of UPC-A symbol. UPC-A can be reduced or magnified anywhere from 80% to 200%.
+A quiet zone, with a width of at least 9 times the x-dimension, must be present on each side of the scannable area of the UPC-A barcode. UPC-E requires 9 X-dimension units on the left side and 7 on the right. For a GTIN-12 number encoded in a UPC-A barcode symbol, the first and last digits are always placed outside the symbol to indicate the quiet zones that are necessary for barcode scanners to work properly.
+
+
+== Encoding ==
+The UPC-A barcode is an optical pattern of bars and spaces that format and encode the UPC digit string. Each digit is represented by a unique pattern of two bars and two spaces. The bars and spaces are variable width; they may be one, two, three, or four modules wide. The total width for a digit is always seven modules. To represent the 12 digits of the UPC-A code requires a total of 7×12 = 84 modules.
+A complete UPC-A includes 95 modules: the 84 modules for the digits (L and R) combined with 11 modules for the start, middle, and end (S, M, and E) patterns. The S and E patterns are three modules wide and use the pattern bar-space-bar; each bar and space is one module wide. The M pattern is five modules wide and uses the pattern space-bar-space-bar-space; each bar and space is one module wide. In addition, a UPC symbol requires a quiet zone (additional space modules) before the S pattern and another quiet zone after the E pattern.
+Each digit is seven modules wide. The UPC's left-side digits (the digits to the left of the middle guard bars) have odd parity, which means the total width of the black bars is an odd number of modules. The right-hand side digits have even parity. Consequently, a UPC scanner can determine whether it is scanning a symbol from left-to-right or from right-to-left (the symbol is upside-down). After seeing a start or end pattern (they are the same bar-space-bar whichever way they are read), the scanner will first see odd parity digits if scanning left-to-right or even parity digits if scanning right-to-left. With the parity/direction information, an upside-down symbol will not confuse the scanner. When confronted with an upside-down symbol, the scanner may simply ignore it (many scanners alternate left-to-right and right-to-left scans, so they will read the symbol on a subsequent pass) or the scanner may recognize the digits and put them in the right order. There is further structure in the digit encoding. The right-hand digits are the optical complement of the left-hand digits. That means that black bars are turned into white spaces and vice versa. Numbers on the right side of the middle guard bars are optically the inverse of the numbers to the left. In other words, while a number on the left side of the UPC will be made up of black bars and white spaces, the same number on the right side would be made up of white bars and black spaces. For example, the left-hand "4" digit is space × 1, bar × 1, space × 3, bar × 2; the right-hand "4" digit is bar × 1, space × 1, bar × 3, space × 2.
+
+
+== Numbering ==
+UPC-A and UPC-E each provide a theoretical maximum of 1 trillion (10^12) unique barcodes, though in practice the number of barcodes is limited by the standards used to create them. For instance, the last digit is the check digit and therefore can only be one correct value for UPC-A. This gives only 100,000,000,000 (10^11) possibilities.
+UPC-A: (10 possible values per digit ^ 6 left digits) × (10 possible values per digit ^ 6 right digits) = 1,000,000 × 1,000,000 = 1,000,000,000,000.
+UPC-E: 10 possible values per digit × 2 possible parities per digit = 20 permutations per digit ^ 6 digits = 64,000,000.
+
+
+=== Number system ===
+The first digit indicates the number system to be used for the subsequent digits. The following number system digits and their numbering schemes are:
+0, 1, 6, 7, 8: For most products. The LLLLL digits are the manufacturer code, and the RRRRR digits are the product code.
+2: Reserved for local use (store/warehouse), for items sold by variable weight. Variable-weight items, such as meats and fresh fruits and vegetables, are assigned a UPC by the store, if they are packaged there. In this case, the LLLLL is the item number, and the RRRRR is either the weight or the price, with the first R determining which.
+3: Drugs by National Drug Code number. Pharmaceuticals in the U.S. have the remainder of the UPC as their National Drug Code (NDC) number; though usually only over-the-counter drugs are scanned at point-of-sale, NDC-based UPCs are used on prescription drug packages and surgical products and, in this case, are commonly called UPN Codes.
+4: Reserved for local use (store/warehouse), often for loyalty cards or store coupons.
+5, 9: Coupons: The manufacturer code is the LLLLL, the first 3 RRR are a family code (set by manufacturer), and the next 2 RR are a coupon code. This 2-digit code determines the amount of the discount, according to a table set by the GS1 US, with the final R being the check digit. These coupons can be doubled or tripled.
+
+
+=== Check digits ===
+
+In the UPC-A system, the check digit is calculated as follows:
+Add the digits in the odd-numbered positions (first, third, fifth, etc.) together and multiply by three.
+Add the digits in the even-numbered positions (second, fourth, sixth, etc.) to the result.
+Find the result modulo 10 (i.e. the remainder when divided by 10.. 10 goes into 58 5 times with 8 leftover).
+If the result is not zero, subtract the result from ten.
+For example, in a UPC-A barcode "03600029145x" where x is the unknown check digit, x can be calculated by:
+Adding the odd-numbered digits (0 + 6 + 0 + 2 + 1 + 5 = 14)
+Multiplying by three (14 × 3 = 42)
+Adding the even-numbered digits (42 + (3 + 0 + 0 + 9 + 4) = 58)
+Calculating modulo ten (58 mod 10 = 8)
+Subtracting from ten (10 − 8 = 2)
+The check digit is thus 2.
+This should not be confused with the numeral "X" which stands for a value of 10 in modulo 11, commonly seen in the ISBN check digit.
+
+
+== Variations ==
+UPC in its most common usage technically refers to UPC-A. Other variants of the UPC exist.
+
+
+=== UPC-E ===
+To allow the use of UPC barcodes on smaller packages where a full 12-digit barcode may not fit, a 'zero-suppressed' version of UPC was developed called UPC-E, in which the number system digit and all trailing zeros in the manufacturer code and all leading zeros in the product code are suppressed (omitted). This symbology differs from UPC-A in that it only uses a 6-digit code, does not use middle guard bars, and the end bit pattern (E) becomes 010101. The way in which a 6-digit UPC-E relates to a 12-digit UPC-A is determined by the last (right-hand most) digit. It can only be used with UPC-A number system 0 or 1, the value of which, along with the check digit, determines the parity pattern of the encoding. With the manufacturer code represented by X's, and product code by N's then:
+For example a UPC-E barcode with the number 654321 would expand to the UPC-A 065100004327 or 165100004324, depending on the parity pattern of the encoded digits, as described next.
+UPC-E check digits are calculated using this expanded string in the same way as used by UPC-A. The resulting check digit is not added to the barcode, however, but is encoded by manipulating the parity of the six digits which are present in the UPC-E - as shown in the following tables:
+Our example code 654321, therefore, would become 1-1-1 4-1-1-1 1-2-3-1 2-3-1-1 1-4-1-1 2-2-1-2 2-2-2-1 1-1-1-1-1-1. The resulting barcode would look roughly like this:
+
+Note: The UPC can detect 100% of single digit errors and 89% of transposition errors.
+
+
+=== EAN ===
+
+The EAN was developed as a superset of UPC, adding an extra digit to the beginning of every UPC number. This expanded the number of unique values theoretically possible by ten times, from 1 trillion to 10 trillion. EAN-13 barcodes also indicate the country in which the company that sells the product is based (which may or may not be the same as the country in which the good is manufactured). The leading digits of the code determine this, according to the GS1 country codes. The EAN-13 encoding rules encode the leading 13th digit by modifying the encoding of the left-hand half of the barcode: the original rules for UPC are treated as a '0' if read as EAN-13. A UPC barcode XXXXXXXXXXXX therefore is the EAN-13 barcode 0XXXXXXXXXXXX. It is possible to prefix a UPC barcode with a 0; they become EAN-13 rather than UPC-A. This does not change the check digit. All point-of-sale systems can now understand both equally.
+EAN-8 is an 8-digit (including check digit) variation of the EAN number.
+UPC usage notes:
+Currently all products marked with an EAN will be accepted in North America in addition to those products already marked with a UPC.
+Any product with an existing UPC does not have to be re-marked with an EAN.
+In North America the EAN adds 40% more codes, mainly by adding '10 through 13' to the '00 through 09' (0 through 9 in UPC) already in use. This is a powerful incentive to phase out the UPC.
+
+
+=== Other variations ===
+UPC-B is a 12-digit version of UPC with no check digit, developed for the National Drug Code and National Health Related Items Code.
+UPC-C is a 12-digit code with a check digit.
+UPC-D is a variable length code (12 digits or more) with the 12th digit being the check digit. These versions are not in common use.
+UPC-2 is a 2-digit supplement to the UPC used to indicate the edition of a magazine or periodical.
+UPC-5 is a 5-digit supplement to the UPC used to indicate suggested retail price for books.
+As the UPC becomes technologically obsolete, it is expected that UPC-B and UPC-C will disappear from common use by the 2010s. The UPC-D standard may be modified into EAN 2.0 or be phased out entirely.
+
+
+== See also ==
+GS1 – International supply-chain standards organization
+Proof of purchase
+
+
+== References ==
+
+US 3832686, Bilgutay, Ilhan M., "Bar Code Font", published May 11, 1972, issued August 27, 1974 
+US 3145291, Brainerd, H. B., "Identification System", published July 2, 1959, issued April 18, 1964  Railroad bar code.
+US 3617707, Shields, Charles B. & Roelif Stapelfeldt, "Automatic car identification system", published August 17, 1967, issued November 2, 1971 
+US 3723710, Crouse, William G. & John E. Jones, "Method and Device for Reading and Decoding a High Density Self-Clocking Bar Code", published June 28, 1971, issued March 27, 1973 
+
+
+== External links ==
+History of Identification Codes

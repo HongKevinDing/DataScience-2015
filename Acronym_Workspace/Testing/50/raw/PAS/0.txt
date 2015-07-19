@@ -1,0 +1,50 @@
+4-aminosalicylic acid, commonly known as PAS, is an antibiotic used to treat tuberculosis. This organic compound has also been use since the 1940s for the treatment of inflammatory bowel diseases (IBDs), where it has shown greater potency in ulcerative colitis and Crohn's disease. It is thought to act via NF-κB (nuclear factor-kappa B) inhibition and free radical scavenging. 5-Aminosalicylic acid, sold under the name mesalazine, is a closely related compound that also has medical uses.
+
+
+== Medical uses ==
+The main use for 4-aminosalicylic acid is for the treatment of tuberculosis infections.
+
+
+=== Tuberculosis ===
+Aminosalicylic acid was introduced to clinical use in 1948. It was the second antibiotic found to be effective in the treatment of tuberculosis, after streptomycin. PAS formed part of the standard treatment for tuberculosis prior to the introduction of rifampicin and pyrazinamide.
+Its potency is less than that of the current five first-line drugs (isoniazid, rifampicin, ethambutol, pyrazinamide, and streptomycin) for treating tuberculosis and its cost is higher, but it is still useful in the treatment of multidrug-resistant tuberculosis. PAS is always used in combination with other anti-TB drugs.
+The dose when treating tuberculosis is 150 mg/kg/day divided into two to four daily doses; the usual adult dose is therefore approximately 2 to 4 grams four times a day. It is sold in the US as "Paser" by Jacobus Pharmaceutical, which comes in the form of 4 g packets of delayed-release granules. The drug should be taken with acid food or drink (orange, apple or tomato juice). PAS was once available in a combination formula with isoniazid called Pasinah or Pycamisan 33.
+The European Medicines Agency (EMA) has recommended granting a marketing authorization for PAS in multidrug-resistant tuberculosis in adults and children when other treatments cannot "be devised for reasons of resistance or tolerability."
+
+
+=== Inflammatory bowel disease ===
+PAS has also been used in the treatment of inflammatory bowel disease (ulcerative colitis and Crohn's disease), but has been superseded by other drugs such as sulfasalazine and mesalazine.
+
+
+=== Others ===
+PAS has been investigated for the use in manganese chelation therapy, and a 17-year follow-up study shows that it might be superior to other chelation protocols such as EDTA.
+
+
+== Pharmacology ==
+With heat, aminosalicylic acid is decarboxylated to produce CO2 and 3-aminophenol.
+The U.S. FDA assigned PAS to pregnancy category C, indicating that it is not known whether it will harm an unborn baby.
+
+
+== Side effects ==
+Gastrointestinal side-effects (nausea, vomiting, diarrhoea) are common; the delayed-release formulation is meant to help overcome this problem. It is also a cause of drug-induced hepatitis. Patients with glucose-6-phosphate dehydrogenase deficiency should avoid taking aminosalicylic acid as it causes haemolysis. Thyroid goitre is also a side-effect because aminosalicylic acid inhibits the synthesis of thyroid hormones.
+Drug interactions include elevated phenytoin levels. When taken with rifampicin, the levels of rifampicin in the blood fall by about half.
+
+
+== History ==
+PAS was discovered by the Swedish chemist Jörgen Lehmann upon the report that the tuberculosis bacterium avidly metabolized salicylic acid. Lehmann first tried PAS as an oral TB therapy late in 1944. The first patient made a dramatic recovery. The drug proved better than streptomycin, which had nerve toxicity and to which TB could easily develop resistance. In the 1948, researchers at Britain's Medical Research Council demonstrated that combined treatment with streptomycin and PAS was superior to either drug alone.
+
+
+== Other names ==
+Like many commercially significant compounds, PAS has many names including para-aminosalicylic acid, p-aminosalicylic acid, 4-ASA, and simply P.
+
+
+== Mode of action ==
+PAS has been shown to be a pro-drug and it is incorporated into the folate pathway by dihydropteroate synthase (DHPS) and dihydrofolate synthase (DHFS) to generate a hydroxyl dihydrofolate antimetabolite, which in turn inhibits DHFR enzymatic activity.
+
+
+== External links ==
+Drugs.com
+RxList
+
+
+== References ==

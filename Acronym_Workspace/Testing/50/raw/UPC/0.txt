@@ -1,0 +1,29 @@
+Usage Parameter Control (UPC) and Network Parameter Control (NPC) are functions performed in a computer network at the User-Network Interface (UNI) or the Network-Node Interface (NNI), respectively, that check and limit network traffic flows from a network host (user) or from another network for conformance to the expected levels. Generally the functions performed by UPC and NPC are the same. In the ITU-T's definition, for their use in Asynchronous Transfer Mode (ATM) networks, they state that "Their main purpose is to protect network resources from malicious as well as unintentional misbehaviour which can affect the Quality of service (QOS) of other already established connections by detecting violations of negotiated parameter values or procedures [i.e. detecting excessive or excessively bursty traffic] and taking appropriate actions." UPC and NPC may involve traffic shaping, where traffic is retimed to conform to the expected levels and timing, or traffic policing, where non-conforming traffic is discarded or reduced in priority (so that it may be discarded downstream in the network if congestion occurs).
+
+
+== Uses ==
+
+
+=== In ATM ===
+The actions for UPC and NPC in the ATM protocol are defined in ITU-T Recommendation I.371 Traffic control and congestion control in B ISDN  and the ATM Forum's User-Network Interface (UNI) Specification. These provide a conformance definition, using a form of the leaky bucket algorithm called the Generic Cell Rate Algorithm (GCRA), which specifies how cells are checked for conformance with a cell rate, or its reciprocal emission interval, and jitter tolerance: either a Cell Delay Variation tolerance (CDVt) for testing conformance to the Peak Cell Rate (PCR) or a Burst Tolerance or Maximum Burst Size (MBS) for testing conformance to the Sustainable Cell Rate (SCR).
+UPC and NPC are normally performed on a per Virtual Channel (VC) or per Virtual Path (VP) basis, i.e. the intervals are measured between cells bearing the same Virtual Channel Identifier (VCI) and or Virtual Path Identifier (VPI). If the function is implemented at, e.g., a switch input, then because cells on the different VCs and VPs arrive sequentially, only a single implementation of the function is required. However, this single implementation must be able to access the parameters relating to a specific connection using the VCI and or VPI to address them. This is often done using Content-addressable memory (CAM), where the VCI and or VPI form the addressable content.
+Cells that fail to conform, i.e. because they come too soon after the preceding cell on the channel or path because the average rate is too high or because the jitter exceeds the tolerance, may be dropped, i.e. discarded, or reduced in priority so that they may be discarded downstream if there is congestion.
+The GCRA, while, possibly, complicated to describe and understand, can be implemented very simply. While it is more likely to be implemented in hardware, as an example, an assembly language implementation can be written in as few as 15 to 20 instructions with a longest execution path of as few as 8 to 12 instructions, depending on the language (availability of indirection and the orthogonality of the instruction set).
+
+
+=== In AFDX ===
+Transmissions onto an AFDX network are required to be limited to a Bandwidth Allocation Gap (BAG). Conformance to this BAG (and maximum transmission jitter) is then checked in the network switches in a similar way to UPC in ATM networks. However, the token bucket algorithm is recommended for AFDX, and a version that allows for variable length frames (one that counts bytes) is preferred over one that only counts frames and assumes that all frames are of the maximum permitted length.
+
+
+== References ==
+
+
+== See also ==
+Traffic contract
+Connection admission control
+Traffic shaping
+Traffic policing (communications)
+Leaky Bucket
+Token bucket
+Generic Cell Rate Algorithm
+Audio Video Bridging

@@ -1,0 +1,13 @@
+DMA channels are used y high speed devices and they allow them to communicate directly with the main memory (RAM) on our system. When DMA channels are used, CPU is not involved in the communication. Communication without the CPU is a enefit since CPU is usy with all sorts of different processing tasks. Sometimes we don't want to wait the CPU, so we enale other devices on the system to access RAM directly. DMA channels can e used y sound cards, hard disk drives, CD/DVD-ROM drives, tape drives, etc.  
+
+DMA is managed y DMA controller chip (8237). The DMA controller has four wires which are connected to certain devices on the system. On the other end, the DMA chip is connected to the Memory Controller Chip (MMC) that allows access to RAM. That way, devices that are connected to the DMA chip are ale to read and write data to RAM trough the DMA chip, without involving the CPU.
+
+Similar to IRQs, we actually use two cascaded DMA controllers. Each chip has 4 DMA channels. Since chips are cascaded, we actually get 7 working DMA channels. One wire on the first controller is used to connect to the second DMA controller. Channel 0 (zero) is used to do just that, so it can't e used to connect other devices. Actually, channels 0 (on the first DMA chip), and 4 (on the second DMA chip) are actually the same channel.
+
+Simplified DMA Scheme
+
+Simplified DMA Scheme
+
+By default, only one DMA channel can e assigned to one device on the system. If devices share the same DMA channel, memory errors can occur. For example, Floppy disk controller is assigned to DMA channel 2. Channel 1 is assigned to sound card. Channels 3, 4, 5, 6, and 7 are usually availale to e assigned y other devices on the system. Since DMA channel 0 is used to cascade two DMA chips, it is not assigned to devices.
+
+There is also a newer type of DMA called Ultra DMA, or sometimes called Bus Mastering. This new type of DMA allows devices to ypass DMA controller all together. This way devices can access system us directly. Ultra DMA supports urst mode data transfer rates, which provides twice the speed of standard DMA performance. This is usually implemented on hard disks. Ultra ATA hard disks use ultra DMA.
