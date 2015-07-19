@@ -1,10 +1,164 @@
 {
-    "UCB":
-        { 
-            "0" : "UC_Berkeley",
-            "1" : "UC_Bank",
-            "Paragraph" : "ABCDEFG",
-            "Answer" : "0"
-    }
+    "NEA":
+    { 
+        "0" : "National_Endowment_for_the_Arts",
+        "1" : "New_England_Aquarium",
+        "Paragraph" : "Individuals have always been the backbone of arts funding. The NEA has never tried to compete with individual donors, and that’s the premise of Kickstarter—it’s a platform that allows individual donors to fund projects. In 2011, individuals contributed $13 billion to arts and cultural charities. According to the NEA, individuals make up 75 percent of all private giving, much more than corporations or foundations. Kickstarter, in essence, simplifies the long-held American tradition of individual private donors giving to the arts.
+
+        The exchange also highlights another misconception about the arts: that the U.S. government once funded the arts so heavily as to compete with private donors. In reality, the NEA has always made up a small part of overall arts funding when compared to private philanthropy.",
+        "Answer" : "0"
+    },
+}
+
+"POD":
+{ 
+    "0" : "Proof_of_delivery",
+    "1" : "Plain_old_data",
+    "Paragraph" : " These three properties imply that if x is an object, we can use ((void*)&x) and sizeof(x) together to represent the memory that x occupies. The question, then, is whether there is any more to x than the contents of its memory. It is that question that the POD notion exists to address: if a type is a POD type, the implication is that there is nothing more to an object of that type than the contents of its memory.
+
+    The fundamental types — that is, the arithmetic, enumeration, and pointer types — are POD types. In other words, the value of an object of a fundamental type depends entirely on the contents of the region of memory that corresponds to that object. It follows that using memcpy to copy an object of a fundamental type will copy that object’s value.",
+    "Answer" : "1"
+},
+        
+"QPS":
+{ 
+    "0" : "Queensland_Police_Service",
+    "1" : "Queries_per_second",
+    "Paragraph" : "The Callout Quota System is strict (observed callouts should never exceed the limit), which makes it inaccurate at low volumes. This is more pronounced when the quota is small (< 10 kQPS), which you can work around by setting the nominal quota limit higher than the intended effective one (for example, setting the quota limit to 1,500 QPS to get 1,000 QPS callouts).
+
+    The Callout Quota System uses error throttling—it sends less callouts than it can if the bidder does not respond to bid requests in time or if the bidder's responses are invalid. Note that error throttling:",
+    "Answer" : "1"
+},
+        
+"RAM":
+{ 
+    "0" : "Random_Access_Memory",
+    "1" : "Royal_Air_Maroc",
+    "Paragraph" : "The flight is a likely indication that delivery for the Moroccan flag-carrier is in sight after years of waiting. The airline was originally scheduled to be one of the earliest customers of the Dreamliner, ordering four airplanes in 2005. The first aircraft appeared painted and ready to fly in the spring of 2010, where it has remained since.
+
+    RAM elected to defer the jets in September of 2012 as the airline faced extensive financial pressure. It currently has four 787-8s on order.",
+    "Answer" : "1"
+},
+            
+"RHS":
+{ 
+    "0" : "Royal_Horticultural_Society",
+    "1" : "Redland_High_School",
+    "Paragraph" : "The horror figures with dead eyes, sharp teeth and blood spattered beards are appearing on patios and decks across the UK, defying the posh RHS bar on letting them into its hallowed grounds.
+
+    Traditional fishing gnomes, cheeky bum baring versions and planters are also proving popular, according to eBay.
+
+    Gnome fan David Lewis, head gardener at The Roof Gardens in Kensington and multi-award winning Chelsea gardener said: Gardens are an expression of your own style.",
+    "Answer" : "0"
+},      
+      
+"TD":
+{ 
+    "0" : "Touchdown",
+    "1" : "Tower_Defence",
+    "Paragraph" : "Jack Austin caught four passes for 76 yards with one TD, Raymond Hudson caught four passes for 35 yards, and Trevor Davis had two receptions for 44 yards for the Golden Bears.
+
+    Bryce Treggs was on the receiving end of Goff’s three-yard scoring throw on the second drive for the first-team offense, while Austin picked up an eight-yard scoring catch from Forrest during the team’s red zone work late in the first half.
+
+    “We tried to make it as fan-friendly as possible but the important thing is to get work done and take care of our players, and I thought we accomplished that,” head coach Sonny Dykes said in a news release. “I thought we certainly accomplished our goals. We stayed healthy (and) we got things on tape that we can improve on. From that standpoint I thought it was a really good day. I think people who came enjoyed it.”",
+    "Answer" : "0"
+},      
+            
+"UCI":
+{ 
+    "0" : "Union_Cycliste_Internationale",
+    "1" : "University_of_California,_Irvine",
+    "Paragraph" : "	We stepped up our efforts to recruit a new cohort of UCI students that more closely reflects the diversity of our state. Our most recent admissions cycle resulted in a 7.1 percent growth in African American California-resident applications, outpacing the growth of the total state resident pool by 1.7 percentage points. In addition, we received more Chicano/Latino California-resident applications than any other UC campus. We anticipate becoming a Hispanic Serving Institution in two years. UCI achieves the highest graduation rate for underrepresented minorities in the UC system, making us a national leader.",
+    "Answer" : "1"
+},      
+
+"PAS":
+{ 
+    "0" : "Para-aminosalicylic_acid",
+    "1" : "Pakistan_Academy_of_Sciences",
+    "Paragraph" : "	PAS may cause hepatitis (inflammation of the liver), usually preceded by a rash or a fever. Other occasional side effects include increased prothrombin time (time for blood to clot) and malabsorption syndrome (disorders in the intestines' ability to absorb nutrients).
+
+    While there is no dose adjustment for patients with liver disease, PAS should be avoided in patients with severe liver disease as it may cause crystalluria (crystals in the urine). PAS should not be taken by patients that are allergic to aspirin.",
+    "Answer" : "0"
+},  
+     
+
+"UPC":
+{ 
+    "0" : "Usage_Parameter_Control",
+    "1" : "Universal_Product_Code",
+    "Paragraph" : "It’s easy.  All you have to do is go to GS1 – the Global Standards Organization (formerly known as the Uniform Code Council). The GS1, a global standards organization, guarantees the every product, asset, service or location will be uniquely identified, virtually worldwide.  Simply click on “Get a GS1 Barcode” and it will locate a GS1 office to assist you.
+
+If your company needs UPC codes for a large number of products or if you are going to sell them through large retailers (which have been reported to include such companies as Barnes & Noble, Best Buy, CVS, Dillards, Home Depot, JC Penney’s, JoAnne Stores, Kohl’s, Kroger’s, Lord & Taylor, Lowes, Macy’s, Michaels, PetSmart, Sears, Sports Authority, SuperValue, True Value, Walgreen’s, Walmart/Sam’s Club, Wegmans and Whole Foods among others) you will need to to deal with GS1 directly. You may also find that—over time—the number of large retailers forcing GS1 Compliance for traceability requirements will grow.",
+    "Answer" : "1"
+},  
+ 
+"TS":
+{ 
+    "0" : "Tracking_signal",
+    "1" : "Tourette_syndrome",
+    "Paragraph" : "Although there is no cure for TS, the condition in many individuals improves in the late teens and early 20s. As a result, some may actually become symptom-free or no longer need medication for tic suppression. Although the disorder is generally lifelong and chronic, it is not a degenerative condition. Individuals with TS have a normal life expectancy. TS does not impair intelligence. Although tic symptoms tend to decrease with age, it is possible that neurobehavioral disorders such as ADHD, OCD, depression, generalized anxiety, panic attacks, and mood swings can persist and cause impairment in adult life.",
+    "Answer" : "1"
+},   
+
+"NATO":
+{ 
+    "0" : "NATO",
+    "1" : "National_Association_of_Theatre_Owners",
+    "Paragraph" : "“The ability of our guests to enjoy the entertainment they choose in safety and comfort is and will continue to be a priority for theater owners. While we do not discuss security procedures or policies, NATO members are working closely with the appropriate security and law enforcement agencies. We are encouraged that the authorities have made progress in their investigation and we look forward to the time when the responsible criminals are apprehended. Until that happens, individual cinema operators may decide to delay exhibition of the movie so that our guests may enjoy a safe holiday movie season experiencing the many other exciting films we have to offer.”",
+    "Answer" : "1"
+},   
+
+"WRAP":
+{ 
+    "0" : "Waste_%26_Resources_Action_Programme",
+    "1" : "Worldwide_Responsible_Apparel_Production",
+    "Paragraph" : "Waste quango WRAP, meanwhile, has been accused of hiring lobbyists to attempt to shut down Conservative criticism of the Government's policies of bin taxes and bin cuts.
+
+Shadow Cabinet Office minister Nick Hurd said: 'Conservatives will adopt U.S.-style rules to ban these practices and we challenge Labour Ministers to serve notice on every lobbying firm and cancel their contracts.' ",
+    "Answer" : "0"
+},   
+  
+  
+"TVA":
+{ 
+    "0" : "Tennessee_Valley_Authority",
+    "1" : "Toronto_Vegetarian_Association",
+    "Paragraph" : " “These are some of the most astonishing water-quality sampling results I’ve ever seen in my 10 years of working on rivers,” said Donna Lisenby, a spokeswoman for Appalachian Voices who helped collect the samples.
+
+A news release from the group included a statement by Robert F. Kennedy Jr., chairman of the national Waterkeeper Alliance, who said, “Although these results are preliminary, we want to release them because of the public health concern and because we believe the T.V.A. and E.P.A. aren’t being candid.” ",
+    "Answer" : "0"
+},
+   
+"UML":
+{ 
+    "0" : "University_of_Massachusetts_Lowell",
+    "1" : "Unified_Modeling_Language",
+    "Paragraph" : "Prior to joining LSUS, Dr. Trutschl (MS 1997, ScD 2002) and his wife, Dr. Urska Cvek, also a UML graduate (MBA 2007, ScD 2004), worked as research assistants at the Institute for Visualization and Perception Research under the mentorship of Professor Georges Grinstein.
+
+During that time, Grinstein, Trutschl, Cvek, and other group members co-founded Anvil, Inc., a bioinformatics data mining and visualization software firm.
+
+In 2002, Drs. Trutschl and Cvek accepted faculty positions in the Computer Science Department at LSUS.  Dr. Trutschl also became Visiting Assistant Professor of Bioinformatics and Computational Biology at Louisiana State University Health Sciences Center in Shreveport.  In 2003, they co-founded the Laboratory for Advanced Biomedical Informatics at LSUS and, in 2006, were named its co-directors.",
+    "Answer" : "0"
+},   
+   
+"TRIM":
+{ 
+    "0" : "Tripartite_motif_family",
+    "1" : "TRIM",
+    "Paragraph" : "These extensive data allowed us to define the sequence patterns of the TRIM-specific RING domain and the consensi of the B1 and B2 domains (Figure 2B). The B1 and B2 domains have different lengths and consensi and, when found together, the type 1 B-box always precedes the type 2. A predicted CC region invariably follows (Figure 2). The B-boxes appear to be critical determinants of the TRIM motif, since, at variance with the R and CC domains, they were only found within this protein family. The C-terminal portion of these proteins may contain known domains, such as the RFP-like (B30.2), the NHL, the TSS-PHD-BROMO, the ARF or uncharacterized sequences (Figure 2A) (Vitale et al., 1996; Cao et al., 1997; Slack and Ruvkun, 1998; Venturini et al., 1999).",
+    "Answer" : "0"
+},   
+
+
+"LAD":
+{ 
+    "0" : "Left_Anterior_Descending",
+    "1" : "Lymphadenopathy",
+    "Paragraph" : "Medical records were reviewed for the documentation of specific diseases causing LAD and the CD4 count at the time of imaging. Of 45 HIV-positive patients with LAD, 40 had specific diagnoses including 22 (55%) infections and 17 (43%) tumors; one patient had both (3%). Mycobacterial disease accounted for 78% of infections; five cases were secondary to bacterial pneumonia and sepsis. Of tumors, lymphoma (7 cases, 39%) was most common, followed by lung cancer, germ cell tumors, and Kaposi's sarcoma. Mean CD4 cell count in patients with tumors was much higher than in patients with infections (314 vs. 62, p < .01). Patients with tumors were somewhat more likely than patients with infections to demonstrate axillary adenopathy (29 vs. 5%, p = .068). Cavitary disease was only observed in patients with infections (27%, p < .03). CT and clinical findings may help direct the differential diagnosis of LAD in AIDS, and promote expedient definitive diagnosis and therapy.",
+    "Answer" : "0"
+},   
+
+
 }
 
