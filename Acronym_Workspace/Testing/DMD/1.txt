@@ -1,0 +1,7 @@
+Digital Multilayer Disk (DMD) is an optical disc format developed by D Data Inc. It is based on the 3D optical data storage technology developed for the Fluorescent Multilayer Disc by the defunct company Constellation 3D. DMDs can store between 22 and 32 GB of binary information. It is based on red laser technology, so DM discs and players can be easily made in existing production facilities with little modifications. Discs are composed of multiple data layers joined by a fluorescent material. Unlike DVDs and CDs, DMD do not have metallic layers, so they are nearly transparent. DMDs are coated with proprietary chemical compositions, and those chemicals react when the red laser shines on a particular layer. The chemical reaction then generates a signal, which is then read by the disc reader. This allows for discs to potentially have up to 100 GB of storage space.
+
+
+== Advantages ==
+A high-definition movie requires about 13 GB of storage with compression, so it can fit in an HD-DMD single disc, and there is enough space to add additional content and features.
+Because DMD only requires a stable, reliable red laser to read information from the disk, the manufacturing processes for both disks and drives is much simpler and much less expensive than other alternatives, like Blu-ray or HD DVD.
+DMD is highly scalable meaning 20GB, 50GB, 100GB+ disks are possible with little additional research & development required.

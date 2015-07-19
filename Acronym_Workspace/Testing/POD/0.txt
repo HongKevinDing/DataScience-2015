@@ -1,0 +1,14 @@
+Proof of delivery (POD) is a method to establish the fact that the recipient received the contents sent by the sender. When the sender sends multiple documents through the mail there is a possibility of some not reaching the intended recipient. Generally post offices provide additional service of guaranteed delivery wherein they ask the recipient to sign a paper and that paper is filed by the postal service for a specified number of days.
+Proof of delivery becomes very important when legal and financial documents are to be exchanged between two parties. In the United States, DHL, UPS and FedEx as well as the US postal service (USPS) provide proof of delivery. Commercial fleet operators also need to be able to confirm proof of delivery of goods to their customers.
+In e-commerce, businesses exchange millions of electronic documents to track delivery information using computer to computer communication techniques like email, FTP and EDI. These documents contain a variety of transaction details, including information regarding purchase orders, invoices, shipping details, product specifications, and price quotes. Electronic documents can exchange new data as well as corrections to previously transmitted messages.
+Legal complications can arise if the recipient company refutes receiving a corrected product specification or a message about a delayed shipment. Both companies could be at loggerheads, each proving/not proving the existence of that particular communication.
+Message-oriented middleware (MOM), is a class of software used to implement computer based business document exchange. Such systems provide proof of delivery services by employing techniques such as logging each send/receive activity.
+Companies also employ intermediate data brokers to exchange information. Employing such services provide not only proof of delivery but also other services like data integrity, multi-point delivery, and single point of contact for data exchange.
+
+
+== See also ==
+Document automation in supply chain management & logistics
+return receipt doubledecker
+
+
+== External links ==

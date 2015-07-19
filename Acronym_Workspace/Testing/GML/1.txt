@@ -1,0 +1,39 @@
+Generalized Markup Language (GML) is a set of macros that implement intent-based (procedural) markup tags for the IBM text formatter, SCRIPT. SCRIPT/VS is the main component of IBM's Document Composition Facility (DCF). A starter set of tags in GML is provided with the DCF product.
+GML was developed in 1969 and the early 1970s by Charles Goldfarb, Edward Mosher and Raymond Lorie (whose surname initials were used by Goldfarb to make up the term GML).
+Using GML, a document is marked up with tags that define what the text is, in terms of paragraphs, headers, lists, tables, and so forth. The document can then be automatically formatted for various devices simply by specifying a profile for the device. For example, it is possible to format a document for a laser printer or a line (dot matrix) printer or for a screen simply by specifying a profile for the device without changing the document itself.
+The Standard Generalized Markup Language (SGML), an ISO-standard technology for defining generalized markup languages for documents, is descended from GML. The Extensible Markup Language (XML) was initially a streamlined and simplified development of SGML, but has outgrown its parent in terms of worldwide acceptance and support.
+
+
+== A GML script example ==
+
+   :h1.Chapter 1:  Introduction
+   :p.GML supported hierarchical containers, such as
+   :ol
+   :li.Ordered lists (like this one),
+   :li.Unordered lists, and
+   :li.Definition lists
+   :eol.
+   as well as simple structures.
+   :p.Markup minimization (later generalized and formalized in SGML),
+   allowed the end-tags to be omitted for the "h1" and "p" elements.
+
+
+== Related Programs ==
+In the early 1980s, IBM developed a dedicated publishing tool called Information Structure Identification Language (ISIL) based on GML. ISIL was used to generate much of IBM documentation for the IBM PC and other products at this time. In the late 1980s, a commercial product called BookMaster was developed, based mostly on ISIL.
+During the early 1980s, Don Williams at IBM developed DWScript to use the SCRIPT/VS on the IBM PC. In 1986, he developed a PC version of ISIL called DWISIL. These products were used only internally at IBM.
+
+
+== See also ==
+HyperText Markup Language
+Standard Generalized Markup Language
+XML
+SCRIPT (markup)
+Information Presentation Facility - a descendant of GML and was used by IBM to write OS/2's electronic books and online help.
+
+
+== References ==
+
+
+== External links ==
+GML Starter Set User's Guide
+GML Starter Set Reference

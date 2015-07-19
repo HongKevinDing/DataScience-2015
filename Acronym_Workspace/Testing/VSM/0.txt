@@ -1,0 +1,8 @@
+A vibrating sample magnetometer or VSM is a scientific instrument that measures magnetic properties, invented in 1955 by Simon Foner at Lincoln Laboratory MIT. The paper about his work was published shortly afterward in 1959. A sample is placed inside a uniform magnetic field to magnetize the sample. The sample is then physically vibrated sinusoidally, typically through the use of a piezoelectric material. Commercial systems use linear actuators of some form, and historically the development of these systems was done using modified audio speakers, though this approach was dropped due to the interference through the in-phase magnetic noise produced, as the magnetic flux through a nearby pickup coil varies sinusoidally. The induced voltage in the pickup coil is proportional to the sample's magnetic moment, but does not depend on the strength of the applied magnetic field. In a typical setup, the induced voltage is measured through the use of a lock-in amplifier using the piezoelectric signal as its reference signal. By measuring in the field of an external electromagnet, it is possible to obtain the hysteresis curve of a material. The vibrating sample magnetometer measures the magnetization of a small sample of magnetic material placed in an external magnetizing field by converting the dipole field of the sample into an ac electrical signal. The idea of vibrating sample came from D. O. Smith's Vibrating Coil magnetometer.
+
+
+== References ==
+
+
+== See also ==
+Magnetometer
