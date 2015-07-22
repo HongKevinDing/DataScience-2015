@@ -35,8 +35,11 @@ def stem_dict(dictionary, stemmer):
     elif stemmer == 'wordnet':
         wordnet_list = [(wordnet.lemmatize(k),v) for (k,v) in dictionary.items()]
         newdict = reduce_list(wordnet_list)
+    elif stemmer == 'unstemmed':
+        newdict = dictionary
     else:
         print('Choose "porter", "lancaster", or "wordnet" for stemmer argument')
+        newdict = dictionary
     return newdict
 
 

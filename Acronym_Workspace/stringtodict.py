@@ -15,16 +15,17 @@ lancaster = nltk.LancasterStemmer()
 wordnet = WordNetLemmatizer()
 
 class StringToDict():
-    def __init__(self, text, stemmer='unstemmed'):
+    def __init__(self, text, stemmer='unstemmed', delete_stopwords=True):
         self._text = text
         self._lower = self._text.lower()
         self._clean = re.sub('\s', ' ', self._lower)
         self._clean2 = re.sub('[^\w ]', '', self._clean)
         self._list = self._clean2.split(' ')
-        self.cleanlist = [word for word in self._list if \
-                          (word != '' \
-                           and word not in stopwords.words('english') \
-                           )]
+        if delete_stopwords:
+            self.cleanlist = [word for word in self._list if (word != '' \
+                           and word not in stopwords.words('english') )]
+        else: 
+            self.cleanlist = [word for word in self._list if (word != '')]
 
         # Stemming options, default unstemmed
         if stemmer == 'unstemmed':
