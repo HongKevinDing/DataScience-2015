@@ -81,9 +81,9 @@ freqs = cleanlist.freq_dict()
 ### Create json file of count dictionary ###
 ############################################
 #print counts
-f_json = open('UCBank2.json','w')
-json.dump(counts,f_json,indent=4)
-f_json.close()
+# f_json = open('UCBank2.json','w')
+# json.dump(counts,f_json,indent=4)
+# f_json.close()
 ############################################
 
 ###############################################
