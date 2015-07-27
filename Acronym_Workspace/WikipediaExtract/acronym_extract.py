@@ -8,18 +8,7 @@ This code takes a (large text) string and returns a list of lists:
 [['acronym', 'definition', 'surrounding words (up to 2000 max)'], [], ...]
 '''
 
-import nltk, re, os, sys
-from nltk import word_tokenize
-from nltk.corpus import stopwords
-
-#
-    # takes (tokenized) string and return True if considered an acronym
-    # 'naive' definition of an acronym:
-    #   (1) in all caps
-    #   (2) at least 2 characters long
-    #   (3) environment:
-    #         'strict' - in parentheses only
-    #         'lax' - anywhere
+import re
 
 def extract_acronym(text):
     '''
