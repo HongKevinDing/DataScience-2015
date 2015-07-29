@@ -42,7 +42,6 @@ def stem_dict(dictionary, stemmer):
         newdict = dictionary
     return newdict
 
-
 # Examples:
 newDict = {'apple': 3, 'apples': 2, 'orange': 1, 'eat': 5, 'eating': 4, 'eater': 3}
 porterDict = stem_dict(newDict, 'porter')
