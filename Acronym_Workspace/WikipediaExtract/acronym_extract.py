@@ -13,7 +13,7 @@ import re
 def extract_acronym(text, search='complex', surrounding='F'):
 
     if search == 'reduced1' or search == 'reduced2':
-        surrounding = 'F'       # the 'simple' options should never include surrounding words
+        surrounding = 'F'       # the 'reduced' and 'simple' options should never include surrounding words
 
     # 'complex' = returns list of lists of acronyms with definitions (and optional surrounding words)
                   # returns: [['acronym', 'definition', 'surrounding words (up to 2000 max)'], [], ...]
@@ -195,7 +195,7 @@ def extract_acronym(text, search='complex', surrounding='F'):
                     2.1 make sure the exact same acronym doesn't appear in the definition
                     2.2 make sure initials in acronym occur in sequential order in definition
                     3. make sure objects 'acronym' and 'definition' have values
-                    4. if search = "simple2" or "simple1", reduce acronym_list by count
+                    4. if search = "reduced1" or "reduced2", reduce acronym_list by count
                 '''
                 if acronym != None and '.' in acronym:
                     acronym = re.sub('.', '', acronym)
@@ -225,7 +225,7 @@ def extract_acronym(text, search='complex', surrounding='F'):
                             acro_dict[a[0]] += 1
                     acronym_list = list(acro_dict.items())
 
-            if search == "reduced2":
+            if search == "reduced2":  # this block is outdented from previous block for a very good reason
                 acro_dict = {}
                 for a in acronym_list:
                     if a not in acro_dict.keys():
