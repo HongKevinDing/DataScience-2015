@@ -4,8 +4,8 @@
 # Team: Kevin Ding, Philipp Dumitrescu, Herman Leung
 
 '''
-This code takes a (large text) string and returns a list of lists with three items max:
-[['acronym', 'definition', 'surrounding words (up to 2000 max)'], [], ...]
+This code takes a (large text) string and returns one of four possible outputs.
+See inside function for details.
 '''
 
 import re
