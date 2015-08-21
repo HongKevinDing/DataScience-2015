@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 
-### CDIPS 2015 Project
-### Team: Kevin Ding, Philipp Dumitrescu, Herman Leung
-### Acronym Detection/Disambiguation
+## CDIPS 2015 Workshop Project
+## Team: Acronyms
+## Members: Hong Ding, Philipp Dumitrescu, Herman Leung
+## July 11 - Aug 1, 2015
+
 '''
+The StringToDict class method takes a string of text, tokenizes it, and
+generates a FreqDist (essentially word counts) object, with option to stem
+or lemmatize the words first.  Subfunctions returns a dictionary with the
+word as the key and, for the value, either the raw count (.counts_dict) or
+the frequency of occurrence (.freq_dict).
 '''
 
 import nltk, re, json, sys
@@ -15,17 +22,16 @@ lancaster = nltk.LancasterStemmer()
 wordnet = WordNetLemmatizer()
 
 class StringToDict():
-    def __init__(self, text, stemmer='unstemmed', delete_stopwords=True):
+    def __init__(self, text, stemmer='unstemmed'):
         self._text = text
         self._lower = self._text.lower()
         self._clean = re.sub('\s', ' ', self._lower)
         self._clean2 = re.sub('[^\w ]', '', self._clean)
         self._list = self._clean2.split(' ')
-        if delete_stopwords:
-            self.cleanlist = [word for word in self._list if (word != '' \
-                           and word not in stopwords.words('english') )]
-        else: 
-            self.cleanlist = [word for word in self._list if (word != '')]
+        self.cleanlist = [word for word in self._list if \
+                          (word != '' \
+                           and word not in stopwords.words('english') \
+                           )]
 
         # Stemming options, default unstemmed
         if stemmer == 'unstemmed':
@@ -54,7 +60,15 @@ class StringToDict():
         frequencies = dict(frequencies)
         return frequencies
 
-text = '''
+
+
+
+
+###############
+### Testing ###
+###############
+
+test_text = '''
 United Carolina Bank
 From Wikipedia, the free encyclopedia
 United Carolina Bank (UCB) was a bank headquartered in Whiteville, North Carolina. It was formed in 1980 by the merger of four banks, including Waccamaw Bank of Whiteville. BB&T took over UCB in 1997.
@@ -74,7 +88,7 @@ UCB's fourth acquisition of the 1990s was Seaboard Savings Bank of Plymouth, Nor
 In 1997, Southern National Corp. of Winston-Salem, North Carolina, which operated as BB&T, took over UCB in a $985 million deal announced in November 1996. UCB had $4.5 billion in assets. 400 employees worked in Whiteville but despite losing the headquarters, the town would eventually have 500 BB&T employees working at a 250-employee call center and other operations.[3][5] Starting September 22, 1997, 91 UCB branches began the process of changing to BB&T, and 67 other branches of the two banks closed starting in October because they were close to other BB&T locations.[16][17] South Piedmont Community College bought the Monroe operations center in 2000 to serve as its Monroe Continuing Education Center, later expanding the campus at the site.[18]
 '''
 
-cleanlist = StringToDict(text, 'unstemmed')
+cleanlist = StringToDict(test_text, 'unstemmed')
 counts = cleanlist.counts_dict()
 freqs = cleanlist.freq_dict()
 
@@ -82,9 +96,9 @@ freqs = cleanlist.freq_dict()
 ### Create json file of count dictionary ###
 ############################################
 #print counts
-# f_json = open('UCBank2.json','w')
-# json.dump(counts,f_json,indent=4)
-# f_json.close()
+f_json = open('UCBank2.json','w')
+json.dump(counts,f_json,indent=4)
+f_json.close()
 ############################################
 
 ###############################################
@@ -105,7 +119,3 @@ freqs = cleanlist.freq_dict()
 #         sum(lancaster_dict.values()) == sum(wordnet_dict.values()):
 #     print('Dictionary_stemmer.py seems to be working correctly.')
 ###############################################
-
-#stopwords = stopwords.words('english')
-#print(len(stopwords))
-#print(stopwords)
