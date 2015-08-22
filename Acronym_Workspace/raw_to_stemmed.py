@@ -1,16 +1,22 @@
 # -*- coding: utf-8 -*-
 
 ### CDIPS 2015 Project
-### Team: Kevin Ding, Philipp Dumitrescu, Herman Leung
-### Acronym Detection/Disambiguation
+### Team: Acronyms
+### Members: Hong Ding, Philipp Dumitrescu, Herman Leung
+### July 11 - Aug 1, 2015
 
+'''
+This file takes text files in Acronym_Workspace/Testing/50/raw/ and stems/lemmatizes them.
+The output is in Acronym_Workspace/Testing/50/cleaned/ and include subfolders according
+to different stemming/lemmatizing methods.
+'''
 
-import re, json, sys, os, shutil
+import re, json, os, shutil
 import stringtodict as std
 
 DIR = '/Users/herman/Documents/CDIPS-DSW-2015/DataScience-2015/Acronym_Workspace/Testing/50/'
-rawDIR = DIR + 'raw2_fix/'
-cleanDIR = DIR + 'cleaned2_fix/'
+rawDIR = DIR + 'raw2_fix/'        # Input directory
+cleanDIR = DIR + 'cleaned2_fix/'  # Output directory
 
 unstemmedDIR = cleanDIR + 'unstemmed/'
 porterDIR = cleanDIR + 'porter/'
@@ -51,4 +57,4 @@ def process_to_files(inputDIR, outputLIST, stemtypeLIST):
                 with open(acroDIR_new + f, 'w') as outfile:
                     json.dump(counts, outfile, indent=4)
 
-process_to_files(rawDIR, [cleanDIR + 'unstemmed/'], ['unstemmed'])
+process_to_files(rawDIR, cleanSUBDIR_list, stem_type)
